@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entorno personal </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+        <style>  
+                footer {background: #293849;padding-top: 25px;color: white;font-size: 15px;}           
+            </style>
+    </head>
+    <body>
+        Bienvenido Juan, qué deseas hacer hoy:
+        <fieldset>
+            <legend>Avisos de la plataforma</legend>
+            Nuestra plataforma ha detectado que hay cambios en alguna de sus peticiones desde su último login,
+        </fieldset>
+        <button onclick="location.href='./tipoCredito.html'" type="button"> Solicitar nuevo crédito</button>
+        <fieldset>
+            <legend>Consultar todas tus peticiones</legend>
+            <button onclick="location.href='./estadoPeticion1.html'" type="button">! Ver el estado de tu petición 1</button><br>
+            <button onclick="location.href='./estadoPeticion2.html'" type="button"> Ver el estado de tu petición 2</button><br>
+            <button onclick="location.href='./estadoPeticion3.html'" type="button"> Ver el estado de tu petición 3</button><br>
+            <button onclick="location.href='./estadoPeticion4.html'" type="button"> Ver el estado de tu petición 4</button><br>
+        </fieldset>
+        <fieldset>
+            <legend>Tratamiento de los datos personales</legend>
+            Hace tiempo, te preguntamos por el tratamiento de tus datos personales.<br> 
+            Por si no lo recuerdas, aquí tienes un enlace para poder descargarte o ver online cómo vamos a tratar <b>TUS</b> datos.<br>
+            <a href="./adjuntos/Tratamiento de Datos Personales Agile Credit.pdf" download>Porque el dueño del dato eres tú</a><br> 
+            Por si has cambiado de idea, te recordamos las elecciones que hiciste en su momento<br>
+            Recuerda que la no aceptación de una de las peticiones no te excluye de ningún proceso ni te vuelve un usuario de segunda <br>
+            <input type="checkbox" name="sameadr"> Acepto la cesión de los datos a las entidades financieras asociadas para su uso exclusivo para elaborar las ofertas. <br>
+            <input type="checkbox" checked="checked" name="sameadr"> Acepto la cesión de los datos a las entidades financieras asociadas para su uso comercial. <br>
+            <input type="checkbox" name="sameadr"> Acepto la cesión de los datos a las entidades financieras y sus empresas asociadas para su uso comercial. <br>   
+        </fieldset>
+
+        <button onclick="location.href='./index.html'" type="button">Salir</button>
+    </body>
+    <footer>
+            <nav class="legal" align = "center">
+                    <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
+                </nav>
+        </footer>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Petición número 1</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+        <style>  
+                footer {background: #293849;padding-top: 25px;color: white;font-size: 15px;}           
+            </style>
+    </head>
+    <body>
+        Fecha de última actualización: <p id="date"></p>
+        <script>
+            document.getElementById("date").innerHTML = Date();
+        </script>
+        La petición número 2 actualmente está en el siguiente estado: <br/>
+
+        <table border="1">
+            <tr>
+                <th>PROGRESO</th>
+                <th>CIA</th>
+                <th>FECHA</th>
+                <th>DESCRIPCIÓN</th>
+            </tr>
+            <tr>
+                <td><img src="./images/icons/completed.png" alt="Finalizado OK"></td>
+                <td>PLATAFORMA</td>
+                <td>03/05/2019</td>
+                <td>Se ha adjuntado la documentación solicitada</td>
+            </tr>
+                <tr>
+                    <td><img src="./images/icons/cancelled.png" alt="Rechazado"></td>
+                    <td>SCORING AGILE</td>
+                    <td>03/05/2019</td>
+                    <td>
+                        Nuestra empresa de scoring ha realizado su evaluación. Nota final 10 sobre 50.<br>
+                        <i>Tiene a su disposición la siguiente dirección <a href = "mailto: duplicada@agilecredit.com">Dpto. Scoring</a> o el teléfono <br>
+                        985xxxxxx para poder ponerse en contacto con nuestro personal para poder <br>
+                        ejercer su derecho a la reevaluación de su caso. El código de socring es el siguiente 24324-23432</i>
+                        NOTA: En ningún momento ninguno de nuestros empleados le van a solicitar sus claves personales.<br>
+                        En caso que se soliciten las mismas rogamos no se conteste y corte todo tipo de comunicación y avise a nuestra dirección general <br>
+                        
+                    </td>
+                </tr>
+            </table>
+            <button onclick="location.href='./paginaPersonal.html'" type="button">< Volver</button>
+        </form>
+    </body>
+    <footer>
+            <nav class="legal" align = "center">
+                    <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
+                </nav>
+        </footer>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Petición número 1</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+        <style>  
+                footer {background: #293849;padding-top: 25px;color: white;font-size: 15px;}           
+            </style>
+    </head>
+    <body>
+        Fecha de última actualización: <p id="date"></p>
+        <script>
+            document.getElementById("date").innerHTML = Date();
+        </script>
+        La petición número 4 actualmente está en el siguiente estado: <br/>
+
+        <p>El sistema ha detectado que la solicitud de la petición es la misma <br>
+           que la solicitud 3 por lo que se considera una petición duplicada y <br>
+            procedemos a descartar la petición. <br><br>
+        En caso que no sea el caso por favor rogamos nos informe a través de la dirección de correo <br>
+        <a href = "mailto: duplicada@agilecredit.com">Soporte</a> o al teléfono 985xxxxxx e informe del número de <br>
+        incidencia 234234 y su usuario.<br>
+        Nuestros empleados en ningún momento van a solicitar sus claves de acceso durante la operación.<br>
+        </p>
+            <button onclick="location.href='./paginaPersonal.html'" type="button">< Volver</button>
+        </form>
+    </body>
+    <footer>
+            <nav class="legal" align = "center">
+                    <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
+                </nav>
+        </footer>
+</html>

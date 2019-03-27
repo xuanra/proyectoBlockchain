@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Petición número 1</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+        <style>  
+                footer {background: #293849;padding-top: 25px;color: white;font-size: 15px;}           
+            </style>
+    </head>
+    <body>
+        Fecha de última actualización: <p id="date"></p>
+        <script>
+            document.getElementById("date").innerHTML = Date();
+        </script>
+        La petición número 1 actualmente está en el siguiente estado: <br/>
+
+        <table border="1">
+            <tr>
+                <th>PORGRESO</th>
+                <th>CIA</th>
+                <th>FECHA</th>
+                <th>DESCRIPCIÓN</th>
+            </tr>
+            <tr>
+                <td><img src="./images/icons/completed.png" alt="Finalizado OK"></td>
+                <td>PLATAFORMA</td>
+                <td>03/05/2019</td>
+                <td>Se ha adjuntado la documentación solicitada</td>
+            </tr>
+                <tr>
+                    <td><img src="./images/icons/completed.png" alt="Finalizado OK"></td>
+                    <td>SCORING AGILE</td>
+                    <td>03/05/2019</td>
+                    <td>Nuestra empresa de scoring ha realizado su evaluación. Nota final 30 sobre 50.</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/icons/progress.png" alt="En progreso"></td>
+                    <td>SEGUROS MARFE</td>
+                    <td>03/05/2019</td>
+                    <td>El técnico 423648234 está evaluando su petición para hacer una oferta</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/icons/init.png" alt="No iniciado"></td>
+                    <td>Seguros San Pico Pato</td>
+                    <td>03/05/2019</td>
+                    <td>No ha solicitado sus datos</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/icons/cancelled.png" alt="Rechazado"></td>
+                    <td>FANTANDER</td>
+                    <td>05/05/2019</td>
+                    <td>Ha evaluado su solicitud y ha rechazado hacer una oferta</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/icons/progress.png" alt="En progreso"></td>
+                    <td>ANQUINTER</td>
+                    <td>03/05/2019</td>
+                    <td>El técnico 362784234 está evaluando la documentación adjunta</td>
+                </tr>
+                <tr>
+                    <td><img src="./images/icons/completed.png" alt="Finalizado OK"></td>
+                    <td>ENTIDAD FANESTO</td>
+                    <td>06/05/2019</td>
+                    <td>La entidad ha emitido una oferta. <a href="#">Ver oferta </a></td>
+                </tr>       
+            </table>
+            <button onclick="location.href='./paginaPersonal.html'" type="button">< Volver</button>
+        </form>
+    </body>
+    <footer>
+            <nav class="legal" align = "center">
+                    <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
+                </nav>
+        </footer>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Datos personales </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+    <style>  
+        footer {background: #293849;padding-top: 25px;color: white;font-size: 15px;}           
+    </style>
+  </head>
+  <body>
+
+        <fieldset>
+          <legend>Datos personales</legend>
+          Nombre: <input type="text" name="nombre" size="30"><br>
+          Apellidos: <input type="text" name="apellidos" size="30"><br>
+          <select size="1" name="D1">
+              <option>NIF</option>
+              <option>NIE</option>
+          </select>
+          Documento de identidad: <input type="text" name="dni" size="15"><br>
+          Fecha de nacimiento: <input type="text" name="fechanacimiento" size="12"><br>
+          Hombre<input type="radio" value="V1" checked name="R1">  Mujer<input type="radio" name="R1" value="V2"><br>  
+      </fieldset>
+      <fieldset>
+        <legend>Datos Contacto</legend>
+        Dirección: <input type="text" name="nombreempresa" size="30"><br>
+        Código Postal: <input type="text" name="codPostal" size="50"><br>
+        Nro Teléfono Móvil: <input type="text" name="telefonoFijo" size="30"><br>
+        Email: <input type="text" name="telefonoFijo" size="30"><br>
+      </fieldset>
+        <fieldset>
+        <legend>Datos Conexión</legend>
+        Usuario: <input type="text" name="user" size="30"><br>
+        Password: <input type="password" name="password" size="50"><br>
+        Confirmar password: <input type="password" name="confirmPassword" size="30"><br>
+      </fieldset>
+      <fieldset>
+          <legend>Tratamiento de datos personales</legend>
+          No es necesario marcar ninguno de los check siguientes para continuar con el proceso. <br>
+          Solo nos sirven para saber si estás interesado hoy en más proyectos futuros que llevemos a cabo.<br>
+          La no aceptación de alguna o todas las condiciones no significa que vayamos a luchar con menor fuerza por tus mejores condiciones.<br>
+          Es por eso que hemos puesto todas las opciones desmarcadas, porque queremos que seas tú quien en su libre albedrío marque las que le interesan <br>
+          Aquí tienes un link para que sepas cómo vamos a usar tus datos. <a href="./adjuntos/Tratamiento de Datos Personales Agile Credit.pdf" download>Tratamiento de datos personales</a><br>
+          Tranquilo tendrás más oportunidades de bajarte este mismo fichero. <br>
+          <input type="checkbox" name="sameadr"> Acepto la cesión de los datos a las entidades financieras asociadas para su uso exclusivo para elaborar las ofertas. <br>
+          <input type="checkbox" name="sameadr"> Acepto la cesión de los datos a las entidades financieras asociadas para su uso comercial. <br>
+          <input type="checkbox" name="sameadr"> Acepto la cesión de los datos a las entidades financieras y sus empresas asociadas para su uso comercial. <br>         
+      </fieldset>
+      <button onclick="history.back();" type="button">< Volver</button> 
+      <button onclick="location.href='./documentacion.html'" type="button"> Continuar ></button>
+  </body>
+  <footer>
+      <nav class="legal" align = "center">
+          <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
+      </nav>
+  </footer>
+</html>
