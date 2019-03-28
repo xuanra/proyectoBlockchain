@@ -3,12 +3,29 @@
     <head>
         <title>Tipo de Préstamo: Compra de coche</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
-    <style>  
-        footer {background: #568cc9;padding-top: 25px;color: white;font-size: 15px;}           
-    </style>
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
     </head>
     <body>
+            <script>
+                    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                    </script>
+                    <div class="topnav">
+                        <a href="./index.html">Home</a>
+                        <a href="./datosPersonales.html">Nuevo usuario</a>
+                        <a href="./login">Login</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+
         <p>
             Importe solicitado: <input type="number" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="currency" id="c1" />€<br>
             Ingresos mensuales: <input type="number" value="1000" min="0" step="0.01" data-number-to-fixed="2" data-number-stepfactor="100" class="currency" id="c1" />€<br>
@@ -24,8 +41,8 @@
         </p>        
     </body>
     <footer>
-            <nav class="legal" align = "center">
-                    <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
-                </nav>
+            <nav class="topnav">
+                <a href="./aviso-legal.html">Aviso legal</a>  <a href="./politica-de-privacidad.html">Política de privacidad</a>  <a href="./politica-de-cookies.html">Política de cookies</a> <a href="./contacto.html">Contacto</a>
+            </nav>
         </footer>
 </html>

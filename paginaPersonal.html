@@ -3,12 +3,27 @@
     <head>
         <title>Entorno personal </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
-        <style>  
-       footer {background: #568cc9;padding-top: 25px;color: white;font-size: 15px;}           
-             </style>
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+            <script>
+                    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                    </script>
+                    <div class="topnav">
+                        <a href="./index.html">Logout</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
         Bienvenido Juan, qué deseas hacer hoy:
         <fieldset>
             <legend>Avisos de la plataforma</legend>
@@ -37,8 +52,8 @@
         <button onclick="location.href='./index.html'" type="button">Salir</button>
     </body>
     <footer>
-            <nav class="legal" align = "center">
-                    <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
-                </nav>
+            <nav class="topnav">
+                <a href="./aviso-legal.html">Aviso legal</a>  <a href="./politica-de-privacidad.html">Política de privacidad</a>  <a href="./politica-de-cookies.html">Política de cookies</a> <a href="./contacto.html">Contacto</a>
+            </nav>
         </footer>
-</html>
+    </html>

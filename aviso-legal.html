@@ -3,16 +3,34 @@
     <head>
         <title>Datos personales </title>
         <meta charset="UTF-8">
-        <style>  
-        footer {background: #568cc9;padding-top: 25px;color: white;font-size: 15px;}           
-           </style>
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+            <script>
+                    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                    </script>
+                    <div class="topnav">
+                        <a href="./index.html">Home</a>
+                        <a href="./datosPersonales.html">Nuevo usuario</a>
+                        <a href="./login">Login</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
 
 
         <h2>Titular del sitio web</h2>
 
-        Los datos identificativos del responsable del presente sitio web son: Agile Credit, S.L. (“ACSL” en adelante) con CIF XXXXXXX, inscrita en el Registro Mercantil de Asturias, con el documento número 1/2019/1.004,0, asiento 2019/1 de fecha 29/03/2019 en el tomo 1, libro 0, folio 1, hoja AS-1, inscripción 1 y domicilio en c/Pelayo 1, 33201 Gijón Asturias (Información facilitada en cumplimiento de lo dispuesto en el artículo 10 de la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico).
+        Los datos identificativos del responsable del presente sitio web son: Agile Credit, S.L. (“ACSL” en adelante) con CIF XXXXXXX, inscrita en el Registro Mercantil de Asturias, con el documento número DDDDD, asiento EEEE/E de fecha 29/03/2019 en el tomo AAAAA, libro BBBBB, folio CCCCC, hoja AS-FFFFF, inscripción GGGGG y domicilio en c/Pelayo 1, 33201 Gijón Asturias (Información facilitada en cumplimiento de lo dispuesto en el artículo 10 de la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico).
 
         <h2>Condiciones de uso</h2>
 
@@ -91,10 +109,9 @@
         Fecha de última actualización: 25 de marzo de 2019
     </body>
     <footer>
-            <nav class="legal" align = "center">
-                <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
+            <nav class="topnav">
+                <a class="active" href="#aviso-legal.html">Aviso legal</a>  <a href="./politica-de-privacidad.html">Política de privacidad</a>  <a href="./politica-de-cookies.html">Política de cookies</a> <a href="./contacto.html">Contacto</a>
             </nav>
         </footer>
-
 
 </html>

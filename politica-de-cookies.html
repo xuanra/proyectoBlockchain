@@ -3,14 +3,29 @@
 <head>
     <title>El equipo creativo y fundadores de Agile Credit</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>  
-       footer {background: #568cc9;padding-top: 25px;color: white;font-size: 15px;}           
-         </style>
 </head>
 <body>
-
+        <script>
+                /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+                <div class="topnav">
+                    <a href="./index.html">Home</a>
+                    <a href="./datosPersonales.html">Nuevo usuario</a>
+                    <a href="./login">Login</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
 <h1 class="content-header modal-header">Política de cookies</h1>
 <div class="content-body modal-body">
     <h3>¿Qué son las cookies?</h3>
@@ -186,8 +201,8 @@
 </body>
 
 <footer>
-        <nav class="legal" align = "center">
-                <a href="./aviso-legal.html">Aviso legal</a> | <a href="./politica-de-privacidad.html">Política de privacidad</a> | <a href="./politica-de-cookies.html">Política de cookies</a> | <a href="./contacto.html">Contacto</a>
-            </nav>
+        <nav class="topnav">
+            <a href="./aviso-legal.html">Aviso legal</a>  <a href="./politica-de-privacidad.html">Política de privacidad</a>  <a class="active" href="#politica-de-cookies.html">Política de cookies</a> <a href="./contacto.html">Contacto</a>
+        </nav>
     </footer>
     </html>
