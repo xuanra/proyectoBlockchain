@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Datos personales </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <script>
+          /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+              function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                      x.className += " responsive";
+                  } else {
+                      x.className = "topnav";
+                  }
+              }
+          </script>
+          <div class="topnav">
+              <a href="./index.html">Home</a>
+              <a class="active" href="#datosPersonales.html">Nuevo usuario</a>
+              <a href="./login.html">Login</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+              </a>
+          </div>
+        <fieldset>
+          <legend>Datos personales</legend>
+          Nombre: <input type="text" name="nombre" size="30"><br>
+          Apellidos: <input type="text" name="apellidos" size="30"><br>
+          <select size="1" name="D1">
+              <option>NIF</option>
+              <option>NIE</option>
+          </select>
+          Documento de identidad: <input type="text" name="dni" size="15"><br>
+          Fecha de nacimiento: <input type="text" name="fechanacimiento" size="12"><br>
+          Hombre<input type="radio" value="V1" checked name="R1">  Mujer<input type="radio" name="R1" value="V2"><br>  
+      </fieldset>
+      <fieldset>
+        <legend>Datos Contacto</legend>
+        Dirección: <input type="text" name="nombreempresa" size="30"><br>
+        Código Postal: <input type="text" name="codPostal" size="50"><br>
+        Nro Teléfono Móvil: <input type="text" name="telefonoFijo" size="30"><br>
+        Email: <input type="text" name="telefonoFijo" size="30"><br>
+      </fieldset>
+        <fieldset>
+        <legend>Datos Conexión</legend>
+        Usuario: <input type="text" name="user" size="30"><br>
+        Password: <input type="password" name="password" size="50"><br>
+        Confirmar password: <input type="password" name="confirmPassword" size="30"><br>
+      </fieldset>
+      <button onclick="history.back();" type="button">Cancelar</button> 
+      <button onclick="location.href='./paginaPersonal.html'" type="button">Aceptar</button>
+  </body>
+  <footer>
+      <nav class="topnav">
+          <a href="./aviso-legal.html">Aviso legal</a>  <a href="./politica-de-privacidad.html">Política de privacidad</a>  <a href="./politica-de-cookies.html">Política de cookies</a> <a href="./contacto.html">Contacto</a>
+      </nav>
+  </footer>
+</html>
